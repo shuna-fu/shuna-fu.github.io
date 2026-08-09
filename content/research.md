@@ -17,7 +17,7 @@ sections:
         - Psychometrics and psychological measurement
         - AI applications in psychology
         - Responsible AI
-        - Decision making
+        - Decision-Making
 
         I combine quantitative methods, psychometrics, machine learning, and longitudinal research to investigate questions in developmental psychology and education.
     design:
