@@ -1,5 +1,5 @@
 ---
-title: Consumer Decision-Making and Price Perception
+title: "Consumer Decision-Making and Price Perception: A Behavioral and Neuroscience Study"
 date: 2018-11-01
 profile: false
 share: false
