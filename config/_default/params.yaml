@@ -127,7 +127,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: "Shuna Fu | PhD Student at the University of Toronto"
+    title: "Shuna Fu"
     # For local_business identity type only
     location:
       address:
