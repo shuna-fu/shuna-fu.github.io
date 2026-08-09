@@ -21,7 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Personal website of Shuna Fu, PhD student in Developmental Psychology and Education at the University of Toronto."
+    description: "Shuna Fu is a PhD student in Developmental Psychology and Education at the University of Toronto, researching wisdom development, psychological well-being, and cross-cultural psychology."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
@@ -127,7 +127,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   seo:
     # Browser tab title override (defaults to identity.name if not set)
-    title: ""
+    title: "Shuna Fu | PhD Student at the University of Toronto"
     # For local_business identity type only
     location:
       address:
