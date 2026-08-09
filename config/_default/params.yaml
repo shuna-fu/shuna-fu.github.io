@@ -13,7 +13,7 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "Shuna Fu"
     # Legal entity for copyright notices (defaults to name if not set)
     organization: ""
     # Schema.org type for structured data
@@ -21,8 +21,7 @@ hugoblox:
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "Personal website of Shuna Fu, PhD student in Developmental Psychology and Education at the University of Toronto."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)
@@ -38,22 +37,22 @@ hugoblox:
     pack: "default"
     # Optional: Override theme pack colors
     colors:
-      primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
-      secondary: ""
-      neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
+      primary: "#5850EC" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+      secondary: "#15847A"
+      neutral: "slate" # Affects gray utilities (text-gray-*, bg-gray-*)
     # Optional: Mode-specific color overrides
     colors_light: {}
     colors_dark: {}
     # Optional: Semantic surface color overrides
     surfaces:
-      background: ""
-      foreground: ""
+      background: "#FAFAFC"
+      foreground: "#1E293B"
       header:
-        background: ""
-        foreground: ""
+        background: "#FAFAFC"
+        foreground: "#182235"
       footer:
-        background: ""
-        foreground: ""
+        background: "#F3F4FA"
+        foreground: "#475569"
 
   # ────────────────────────────────────────────────────────────────────────────
   # TYPOGRAPHY

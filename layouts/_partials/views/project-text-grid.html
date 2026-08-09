@@ -1,0 +1,31 @@
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+
+<article class="group rounded-2xl border border-slate-200/80 bg-white/90 p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg dark:border-slate-700 dark:bg-slate-900/90" role="article" aria-labelledby="card-title-{{ $item.File.UniqueID }}">
+  {{ with $item.Params.research_areas }}
+    <div class="flex flex-wrap gap-2">
+      {{ range first 2 . }}
+        <span class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-200">{{ . }}</span>
+      {{ end }}
+    </div>
+  {{ end }}
+  <h3 id="card-title-{{ $item.File.UniqueID }}" class="mt-5 text-xl font-bold leading-tight tracking-tight text-slate-900 dark:text-slate-100">
+    <a href="{{ $link }}" class="hover:text-primary-600 hover:underline dark:hover:text-primary-400">{{ $item.Title }}</a>
+  </h3>
+  <p class="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-300">
+    {{ (partial "functions/get_summary" $item) | plainify | htmlUnescape | truncate 150 }}
+  </p>
+  {{ with $item.Params.research_methods }}
+    <div class="mt-4">
+      <div class="flex flex-wrap gap-2">
+        {{ range . }}
+          <span class="rounded-full bg-primary-100 px-3 py-1 text-xs font-medium text-primary-800 dark:bg-primary-900/40 dark:text-primary-300">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+  <a href="{{ $link }}" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-600 transition-colors hover:text-primary-700 dark:text-primary-400 dark:hover:text-primary-300">
+    {{ i18n "read_more" | default "Read more" }}
+    <span aria-hidden="true">→</span>
+  </a>
+</article>
