@@ -327,3 +327,17 @@ body.life-lightbox-open {
 .dark #section-resume-biography-3 .bio-text p:first-child {
   color: #f8fafc;
 }
+
+/* Preserve readable contrast for the homepage biography in dark mode. */
+.dark #section-resume-biography-3 .bio-text,
+.dark #section-resume-biography-3 .resume-biography {
+  color: #e2e8f0;
+}
+
+.dark #section-resume-biography-3 [class*="text-gray"] {
+  color: #cbd5e1 !important;
+}
+
+.dark #section-resume-biography-3 a:not([href*="ShunaFu_CV"]) {
+  color: #c4b5fd;
+}
