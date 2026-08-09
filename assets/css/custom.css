@@ -207,6 +207,12 @@ body {
   max-height: 88vh;
   border-radius: 0.4rem;
   box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  transition: transform 180ms ease;
+}
+
+.life-lightbox-image:hover {
+  transform: scale(1.01);
 }
 
 .life-lightbox-close {
@@ -219,6 +225,39 @@ body {
   cursor: pointer;
   font-size: 2.5rem;
   line-height: 1;
+}
+
+.life-lightbox-previous,
+.life-lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  background: rgba(15, 23, 42, 0.5);
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  line-height: 2.35rem;
+  transition: background 180ms ease, transform 180ms ease;
+}
+
+.life-lightbox-previous {
+  left: 1.25rem;
+}
+
+.life-lightbox-next {
+  right: 1.25rem;
+}
+
+.life-lightbox-previous:hover,
+.life-lightbox-previous:focus-visible,
+.life-lightbox-next:hover,
+.life-lightbox-next:focus-visible {
+  background: rgba(15, 23, 42, 0.8);
+  transform: translateY(-50%) scale(1.06);
 }
 
 body.life-lightbox-open {
